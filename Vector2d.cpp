@@ -88,7 +88,7 @@ double Vector2d::length() const {
 	return sqrt(this->x * this->x + this->y * this->y);
 }
 Vector2d Vector2d::normal() const {
-	return { this->x, -this->y };
+	return { this->y, -this->x };
 }
 Vector2d Vector2d::normalize() const {
 	double length = this->length();
